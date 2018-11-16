@@ -1,0 +1,47 @@
+<div class="panel-header panel-header-sm">
+  </div>
+  <div class="main-content">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header">
+                      <h5 class="title">Student List Page Header</h5>
+                      <p class="category">Student List Page Sub Header
+                      </p>
+                  </div>
+                  <div class="card-body">
+                        <div class="table-responsive">
+                                <table class="table">
+                                  <thead class=" text-primary">
+                                    <th>
+                                      ID
+                                    </th>
+                                    <th>
+                                      Full Name
+                                    </th>
+                                    <th>
+                                      Registration Date
+                                    </th>
+                                  </thead>
+                                  <tbody>
+                                    <tr *ngFor="let student of studentList">
+                                      <td>
+                                       <a  href="" routerLink="/students/studentDetails"> {{student.id}}</a>
+                                      </td>
+                                      <td>
+                                            {{student.fullName}}
+                                      </td>
+                                      <td>
+                                            {{formatDate(student.registrationDate)}}
+                                      </td>
+                                    
+                                    </tr>
+                               
+                                  </tbody>
+                                </table>
+                              </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

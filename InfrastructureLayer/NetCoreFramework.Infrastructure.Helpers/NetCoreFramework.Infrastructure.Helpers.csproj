@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Castle.Windsor" Version="4.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\NetCoreFramework.Domain.EventHandlers\NetCoreFramework.Domain.EventHandlers.csproj" />
+    <ProjectReference Include="..\..\DomainLayer\NetCoreFramework.Domain.Events\NetCoreFramework.Domain.Events.csproj" />
+  </ItemGroup>
+
+</Project>

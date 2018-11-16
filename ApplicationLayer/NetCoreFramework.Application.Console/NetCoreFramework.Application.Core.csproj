@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\NetCoreFramework.Domain.Events\NetCoreFramework.Domain.Events.csproj" />
+    <ProjectReference Include="..\..\DomainLayer\NetCoreFramework.Domain.Specifications\NetCoreFramework.Domain.Specifications.csproj" />
+    <ProjectReference Include="..\..\InfrastructureLayer\NetCoreFramework.Infrastructure.Data\NetCoreFramework.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\..\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\NetCoreFramework.Infrastructure.Helpers.csproj" />
+    <ProjectReference Include="..\NetCoreFramework.Application.Core.DTO\NetCoreFramework.Application.Core.DTO.csproj" />
+  </ItemGroup>
+
+</Project>
