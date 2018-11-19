@@ -420,6 +420,8 @@
       "NetCoreFramework.Infrastructure.Helpers/1.0.0": {
         "dependencies": {
           "Castle.Windsor": "4.1.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0-preview3-35497",
+          "Microsoft.AspNetCore.Http.Features": "2.2.0-preview3-35497",
           "NetCoreFramework.Domain.EventHandlers": "1.0.0",
           "NetCoreFramework.Domain.Events": "1.0.0"
         },

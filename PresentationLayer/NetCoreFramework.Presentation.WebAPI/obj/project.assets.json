@@ -4694,6 +4694,8 @@
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Castle.Windsor": "4.1.1",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1",
+          "Microsoft.AspNetCore.Http.Features": "2.1.1",
           "NetCoreFramework.Domain.EventHandlers": "1.0.0",
           "NetCoreFramework.Domain.Events": "1.0.0"
         },

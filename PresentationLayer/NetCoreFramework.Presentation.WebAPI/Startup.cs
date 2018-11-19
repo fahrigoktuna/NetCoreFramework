@@ -15,6 +15,11 @@ using Microsoft.EntityFrameworkCore;
 using NetCoreFramework.Application.Core.Students;
 using NetCoreFramework.Application.Core.DTO.TestPurpose;
 using NetCoreFramework.Presentation.WebAPI.Filters;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using System.Net;
+using Newtonsoft.Json.Linq;
 
 namespace NetCoreFramework.Presentation.WebAPI
 {
@@ -37,7 +42,48 @@ namespace NetCoreFramework.Presentation.WebAPI
 
             services.AddMvc(/*options=> options.Filters.Add(typeof(ValidateModelStateAttribute))*/).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+
             services.AddCors();
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }
+                ).AddJwtBearer(options =>
+                {
+
+                    options.Events = new JwtBearerEvents()
+                    {
+                        OnChallenge = context =>
+                        {
+                            // Skip the default logic.
+                            context.HandleResponse();
+
+                            var payload = new JObject
+                            {
+                                ["error"] = "Needed valid token to authorize!",
+                                ["statusCode"] = 401
+                            };
+                            context.Response.StatusCode = 401;
+                            return context.Response.Body.WriteAsync(Encoding.Default.GetBytes(payload.ToString())).AsTask();
+                        }
+                    };
+
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters()
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes("Jwt Key Jwt Key Jwt Key Jwt Key Jwt Key")),
+                        ValidateIssuer = false,
+                        ValidateAudience = false,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.Zero
+                    };
+
+                });
+
+
+
 
             ProfileRegistration.RegisterMapping();
         }
@@ -56,8 +102,9 @@ namespace NetCoreFramework.Presentation.WebAPI
             }
 
             //app.UseHttpsRedirection();
-            app.UseCors(action=> action.AllowAnyOrigin());
+            app.UseCors(action => action.AllowAnyOrigin().AllowCredentials());
             app.UseMvc();
+            app.UseAuthentication();
         }
     }
 }
