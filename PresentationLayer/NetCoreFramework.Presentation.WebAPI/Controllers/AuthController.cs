@@ -43,7 +43,7 @@ namespace NetCoreFramework.Presentation.WebAPI.Controllers
                 new Claim(ClaimTypes.Name,"CurrentUserName")
                     }
                     ),
-                    Expires = DateTime.Now.AddSeconds(30),
+                    Expires = DateTime.Now.AddHours(1),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes("Jwt Key Jwt Key Jwt Key Jwt Key Jwt Key")), SecurityAlgorithms.HmacSha512Signature)
                 };
 
