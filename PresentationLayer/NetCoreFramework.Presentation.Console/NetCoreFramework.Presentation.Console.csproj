@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\ApplicationLayer\NetCoreFramework.Application.Console\NetCoreFramework.Application.Core.csproj" />
+    <ProjectReference Include="..\..\ApplicationLayer\NetCoreFramework.Application.Core\NetCoreFramework.Application.Core.csproj" />
   </ItemGroup>
 
 </Project>
