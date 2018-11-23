@@ -11,17 +11,20 @@ using NetCoreFramework.Domain.Events.Students;
 using NetCoreFramework.Domain.Specifications.Students;
 using NetCoreFramework.Application.Core.DTO.Student;
 using Microsoft.EntityFrameworkCore;
+using RabbitMQ.Client;
+using Newtonsoft.Json;
+using NetCoreFramework.Infrastructure.Helpers.RabbitMQ;
 
 namespace NetCoreFramework.Application.Core.Students
 {
     public class StudentService : IStudentService
     {
-        private FrameworkContext _context;
         private EFUnitOfWork _uow;
-        public StudentService(FrameworkContext context)
+        IConnection _busClient;
+        public StudentService(FrameworkContext context,IConnection busClient)
         {
-            _context = context;
             _uow = new EFUnitOfWork(context);
+            _busClient = busClient;
         }
         public Student GetStudentById(int id)
         {
@@ -30,7 +33,7 @@ namespace NetCoreFramework.Application.Core.Students
 
         public List<StudentDTO> GetStudentList()
         {
-            return AutoMapper.Mapper.Map<List<Student>,List<StudentDTO>>(_uow.GetRepository<Student>().GetFullList().ToList());
+            return AutoMapper.Mapper.Map<List<Student>, List<StudentDTO>>(_uow.GetRepository<Student>().GetFullList().ToList());
         }
         public List<StudentDTO> GetStudentListWithEnrollments()
         {
@@ -43,7 +46,10 @@ namespace NetCoreFramework.Application.Core.Students
             {
                 _uow.GetRepository<Student>().Add(s);
                 _uow.Commit();
-                DomainEvents.Raise<StudentCreated>(new StudentCreated(s));
+
+                _busClient.PublishEvent<StudentCreated>(new StudentCreated(s), $"{ typeof(StudentCreated).Assembly.GetName().Name}/{nameof(StudentCreated)}");
+
+                //DomainEvents.Raise<StudentCreated>(new StudentCreated(s)); REPLACED BY RABBIT MQ BUS
             }
             else
                 throw new Exception(string.Format("Studen FName: {0} - LName: {1} already exists in database", s.FirstMidName, s.LastName));
@@ -58,7 +64,7 @@ namespace NetCoreFramework.Application.Core.Students
             }
             else
                 throw new Exception(string.Format("Studen ID: {0} - doest not exists in database", s.ID));
-         
+
 
         }
 

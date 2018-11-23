@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\ApplicationLayer\NetCoreFramework.Application.Core.DTO\NetCoreFramework.Application.Core.DTO.csproj" />
     <ProjectReference Include="..\..\ApplicationLayer\NetCoreFramework.Application.Core\NetCoreFramework.Application.Core.csproj" />
+    <ProjectReference Include="..\..\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\NetCoreFramework.Infrastructure.Helpers.csproj" />
   </ItemGroup>
 
 </Project>

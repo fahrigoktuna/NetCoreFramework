@@ -21,6 +21,8 @@ using System.Text;
 using System.Net;
 using Newtonsoft.Json.Linq;
 using Swashbuckle.AspNetCore.Swagger;
+using NetCoreFramework.Infrastructure.Helpers.RabbitMQ;
+
 
 namespace NetCoreFramework.Presentation.WebAPI
 {
@@ -106,7 +108,7 @@ namespace NetCoreFramework.Presentation.WebAPI
             });
 
 
-
+            services.AddRabbitMq(Configuration);
 
             ProfileRegistration.RegisterMapping();
         }
@@ -135,7 +137,7 @@ namespace NetCoreFramework.Presentation.WebAPI
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
 
-
+            
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.

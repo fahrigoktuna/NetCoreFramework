@@ -61,7 +61,7 @@ namespace NetCoreFramework.Presentation.Console
         {
             ProfileRegistration.RegisterMapping();
             _context = new DesignTimeDbContextFactory().CreateDbContext(null);
-            _studentService = new StudentService(_context);
+            //_studentService = new StudentService(_context);
         }
     }
 }

@@ -9,6 +9,17 @@ C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Specificati
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.AssemblyInfo.cs
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.dll
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.pdb
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.deps.json
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.dll
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.pdb
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.csprojResolveAssemblyReference.cache
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.csproj.CoreCompileInputs.cache
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.AssemblyInfoInputs.cache
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.AssemblyInfo.cs
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.dll
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.pdb
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.deps.json
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.dll
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Specifications\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Specifications.pdb

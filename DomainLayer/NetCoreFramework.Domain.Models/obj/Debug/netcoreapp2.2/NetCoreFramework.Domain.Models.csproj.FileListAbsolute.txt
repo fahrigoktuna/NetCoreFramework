@@ -6,6 +6,14 @@ C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Models\obj\
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.AssemblyInfo.cs
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
 C:\Users\fahri\source\repos\NetCoreFramework\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.deps.json
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.csproj.CoreCompileInputs.cache
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.AssemblyInfoInputs.cache
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.AssemblyInfo.cs
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
+C:\Users\fahri\Desktop\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.deps.json
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\bin\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
@@ -14,4 +22,3 @@ C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.AssemblyInfo.cs
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.dll
 C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.pdb
-C:\Users\fahri\source\repos\NetCoreFramework\DomainLayer\NetCoreFramework.Domain.Models\obj\Debug\netcoreapp2.2\NetCoreFramework.Domain.Models.csprojResolveAssemblyReference.cache
