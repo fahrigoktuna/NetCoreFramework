@@ -19,11 +19,11 @@ namespace NetCoreFramework.Application.Core.Students
 {
     public class StudentService : IStudentService
     {
-        private EFUnitOfWork _uow;
+        private IUnitOfWork _uow;
         IConnection _busClient;
-        public StudentService(FrameworkContext context,IConnection busClient)
+        public StudentService(IConnection busClient, IUnitOfWork uow)
         {
-            _uow = new EFUnitOfWork(context);
+            _uow = uow;
             _busClient = busClient;
         }
         public Student GetStudentById(int id)

@@ -22,6 +22,8 @@ using System.Net;
 using Newtonsoft.Json.Linq;
 using Swashbuckle.AspNetCore.Swagger;
 using NetCoreFramework.Infrastructure.Helpers.RabbitMQ;
+using NetCoreFramework.Infrastructure.Helpers.MongoDB;
+using NetCoreFramework.Infrastructure.Helpers.UoW;
 
 
 namespace NetCoreFramework.Presentation.WebAPI
@@ -41,10 +43,13 @@ namespace NetCoreFramework.Presentation.WebAPI
             services.AddDbContext<FrameworkContext>(options =>
             options.UseSqlServer("Server=localhost;Database=NetCoreFramework;Trusted_Connection=True;MultipleActiveResultSets=true").EnableSensitiveDataLogging(true));
 
+            services.AddMongoDbContext(Configuration);
+
+            services.AddUoW();
+
             services.AddScoped<IStudentService, StudentService>();
 
             services.AddMvc(/*options=> options.Filters.Add(typeof(ValidateModelStateAttribute))*/).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
 
             services.AddCors();
 
@@ -109,6 +114,7 @@ namespace NetCoreFramework.Presentation.WebAPI
 
 
             services.AddRabbitMq(Configuration);
+
 
             ProfileRegistration.RegisterMapping();
         }

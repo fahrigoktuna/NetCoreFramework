@@ -45,3 +45,5 @@ C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramewor
 C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\obj\Debug\netcoreapp2.2\NetCoreFramework.Infrastructure.Helpers.AssemblyInfo.cs
 C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\obj\Debug\netcoreapp2.2\NetCoreFramework.Infrastructure.Helpers.dll
 C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\obj\Debug\netcoreapp2.2\NetCoreFramework.Infrastructure.Helpers.pdb
+C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\bin\Debug\netcoreapp2.2\NetCoreFramework.Infrastructure.Data.dll
+C:\Users\fahri\source\repos\NetCoreFramework\InfrastructureLayer\NetCoreFramework.Infrastructure.Helpers\bin\Debug\netcoreapp2.2\NetCoreFramework.Infrastructure.Data.pdb
